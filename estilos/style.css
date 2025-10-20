@@ -139,6 +139,7 @@ main h1 {
     color: #01443d;
     font-family: var(--fonte-android);
     font-weight: 1.8;
+    font-weight: bold;
 }
 
 main > aside > * {
