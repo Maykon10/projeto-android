@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype'), 
+         url('../fonts/idroid\ Bold.otf') format('opentype'),
+         url('../fonts/idroid\ Bold\ Italic.otf') format('opentype'),
+         url('../fonts/idroid\ Italic.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    /* Parte principal, util para declarar váriaveis. Mais fácil e rápido de alterar todo o código de uma vez. */
+    --cor1: #0CF25D; /* Exemplo */
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'idroid', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bebas-neue-regular {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: rgb(196, 185, 137);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+strong {
+    color: #01461f;
+    font-weight: bold;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #03792c, #01461f);
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    height: auto;
+    padding: 20px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+}
+
+header > p {
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+
+}
+
+nav {
+    text-align: left;
+    background-color: #01461f;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.199);
+}
+
+nav > a {
+    color: rgb(200, 253, 195);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.75s;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color: #099c3c;
+    color: #023833;
+}
+
+main {
+    background-color: white;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.452);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main a {
+    background-color: #13ff79b2;
+    color: #02420d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #067418;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+}
+
+main * {
+    margin-bottom: 15px;
+}
+
+main h1 {
+    color: #01443d;
+    font-family: var(--fonte-android);
+    font-weight: 1.8;
+}
+
+main > aside > * {
+    margin: 0px 5px 5px 5px;
+}
+
+main h2 {
+    color: #025951;
+    background-image: linear-gradient(to right, #1df079, transparent);
+    font-family: var(--fonte-android);
+    text-indent: 10px;
+}
+
+div.video {
+    background-color: #067418;
+    margin: 15px -15px;
+    padding: 20px;
+    padding-bottom: 55.4%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #adfdc9;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside > h3 {
+    background-color: #01443d;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+footer {
+    background-color: #038C3E;
+    color: rgba(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+footer * {
+    margin: 0px;
+}
